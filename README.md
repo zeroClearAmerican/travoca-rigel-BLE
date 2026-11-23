@@ -3,8 +3,7 @@
 Reimplementation of the BLE protocol used by Travoca Rigel-series fridges, so you can read telemetry and
 control the fridge from a computer instead of the phone app.
 
-The Rigel is a rebadged ICECO unit, so other ICECO-based fridges may speak the same protocol. Only one fridge
-has been tested so far.
+Only one fridge, a Rigel 60, has been tested so far.
 
 Unofficial and not affiliated with Travoca or ICECO.
 
