@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Local captures and device profiles contain BLE addresses of your devices
+captures/
+profiles/
+*.btsnoop
