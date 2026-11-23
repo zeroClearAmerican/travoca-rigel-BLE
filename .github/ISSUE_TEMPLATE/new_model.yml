@@ -1,0 +1,38 @@
+name: Other fridge model / protocol data
+description: Report a model that works (or doesn't), or share captures of commands not documented yet.
+labels: [protocol]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Only commands captured from the official app get added to the library, so captures from the
+        `devtools relay` are the most useful thing to include. Remove BLE addresses first, including the one
+        inside the manufacturer data.
+  - type: input
+    id: model
+    attributes:
+      label: Fridge model
+    validations:
+      required: true
+  - type: input
+    id: revisions
+    attributes:
+      label: Model / firmware / software strings
+      description: From the Device Information service (`python -m devtools profile <address>`).
+  - type: textarea
+    id: status
+    attributes:
+      label: Does `travoca-rigel status` work?
+      description: Paste the output, or the error.
+      render: text
+  - type: textarea
+    id: features
+    attributes:
+      label: App features not covered here
+      description: Settings or readings the app shows that PROTOCOL.md doesn't document.
+  - type: textarea
+    id: captures
+    attributes:
+      label: Captures
+      description: Relevant lines from `captures/*.jsonl`, with a note of what you did in the app for each.
+      render: text

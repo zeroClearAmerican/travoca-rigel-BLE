@@ -115,6 +115,11 @@ shelf to 0 °F, and turns it off. Each step has to show up in the fridge's statu
 `--reconnect` also drops the link through BlueZ in the middle and checks the client reconnects. The fridge is
 left off with those setpoints.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Report security problems privately, as described in
+[SECURITY.md](SECURITY.md).
+
 ## License
 
 [PolyForm Noncommercial 1.0.0](LICENSE). You can use, modify and share it for any non-commercial purpose,

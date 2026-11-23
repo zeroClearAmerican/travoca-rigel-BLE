@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in the library, CLI or dev tools doesn't work right.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove BLE addresses from anything you paste. The fridge's address also appears inside its
+        advertisement (manufacturer data) and in `profiles/` files.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output
+      description: Run the command again with `-v` and paste the output.
+      render: text
+  - type: input
+    id: model
+    attributes:
+      label: Fridge model
+      placeholder: Rigel 60
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Fridge firmware / software revision
+      description: From `python -m devtools profile <address>` (Device Information service), if you know it.
+  - type: input
+    id: platform
+    attributes:
+      label: OS, Python version and Bluetooth adapter
+      placeholder: Fedora 44, Python 3.14, Intel AX211
+    validations:
+      required: true
