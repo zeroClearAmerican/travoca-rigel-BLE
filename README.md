@@ -46,7 +46,7 @@ travoca-rigel shelf 38
 ```
 
 The address comes from `--address`, then `$TRAVOCA_ADDRESS`, then discovery if exactly one fridge is in range.
-Add `-v` for debug logging, which includes the status fields we haven't identified yet.
+Add `-v` for debug logging, which includes the status fields that are still unidentified.
 
 ## Library
 
@@ -115,6 +115,8 @@ shelf to 0 °F, and turns it off. Each step has to show up in the fridge's statu
 `--reconnect` also drops the link through BlueZ in the middle and checks the client reconnects. The fridge is
 left off with those setpoints.
 
-## Roadmap
+## License
 
-Home Assistant integration, either through a Bluetooth adapter on the HA host or through an ESP32 on Wi-Fi.
+[PolyForm Noncommercial 1.0.0](LICENSE). You can use, modify and share it for any non-commercial purpose,
+such as personal or hobby use, or use by a charity, school, public research organization or government body.
+Commercial use isn't allowed.
